@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243 ,243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.todos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.foto img {
+    height: 50rem;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 26rem;
+    min-width: 350px;
+}
+
+.grupos {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    background-color: white;
+    width: 350px;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+.grupos:nth-child(1) {
+    min-height: 370px;
+    margin-bottom: 10px;
+}
+
+.grupos:nth-child(2) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.grupos:nth-child(2) a {
+    color: blue
+}
+
+.entrar-facebook img {
+    width: 16px;
+    height: 16px;
+}
+
+.logo-instagram img {
+    width: 60%;
+    height: 100%;
+}
+
+.formulario-login {
+    text-align: center;
+}
+
+.formulario-login input {
+    width: 270px;
+    padding: 3px;
+    margin: 2px;
+}
+
+.entrar-botao {
+    background-color: #b2dffc;
+    color: white;
+    padding: 5px 115px 5px 115px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.ou {
+    color: gray;
+}
+
+.esqueceu-senha a {
+    font-size: 13px;
+}
+
+.obtenha-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.obter {
+    font-size: 14px;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    margin-right: 5px;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+/* media queries */
+
+@media (max-width: 1090px) {
+    .todos {
+        width: 80%;
+    }
+}
+
+@media (max-width: 810px) {
+    .todos {
+        width: 90%;
+    }
+}
+
+@media (max-width: 720px) {
+
+    body {
+        background-color: white;
+    }
+
+    .todos {
+        width: 90%;
+    }
+
+    .foto {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    .grupos {
+        border: 1px solid transparent;
+    }
+}
+
